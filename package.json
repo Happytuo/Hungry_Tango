@@ -1,0 +1,20 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:scss": "sass scss/style.scss css/style.css",
+    "build:pug": "pug pug/*.pug --out ./",
+    "build": "npm run build:scss && npm run build:pug",
+    "watch:pug": "pug -w pug/*.pug --out ./",
+    "watch:scss": "sass --watch scss/style.scss:css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
+}

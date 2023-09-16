@@ -1,0 +1,73 @@
+doctype html
+html(lang="zh-Hant-TW")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        block pageTitle
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&family=Noto+Serif:wght@400;500;700&display=swap", rel="stylesheet")
+        link(rel="stylesheet", href="./css/style.css")
+        script(src="./js/jquery-3.6.3.min.js")
+        script(src="./js/main.js")
+        block headScripts
+    body
+        header.header
+            .header__container
+                .header__main
+                    a.logo  
+                        img(src="./images/logo.svg", alt="logo")
+                    nav.nav
+                        ul
+                            li
+                                a 品牌理念
+                            li
+                                a 菜單
+                            li
+                                a 最新消息
+                    a#burger.burger
+                        span
+        .menu
+            a.menu__close
+            nav.menu__nav
+                ul
+                    li
+                        a 品牌理念
+                    li
+                        a 菜單
+                    li
+                        a 最新消息
+        .wrapper
+            block content
+        footer.footer
+            .footer__container
+                .footer__topline
+                .footer__main
+                    .footer__main-block
+                        img(src="./images/logo.svg", alt="logo")
+                    .footer__main-block
+                        ul.footer__contact
+                            li
+                                label 聯繫電話
+                                p 
+                                    a(href="tel:07-238-5555") 07-238-5555
+                            li
+                                label 電子郵件
+                                p
+                                    a(href="mailto:") (待提供)
+                            li
+                                label 地址
+                                p
+                                    a(href="https://goo.gl/maps/PXW7uW3V6rVCdsQp8" target="_blank") 高雄市新興區林森一路227號
+                    .footer__main-block
+                        nav.footer__nav
+                            ul
+                                li
+                                    a 隱私權條款
+                                li
+                                    a 使用條款
+                                li
+                                    a(href="tel:0800-265168") 免付費客服專線：0800-265168
+                        p.copyright All rights reserved. Copyright © 2023 飢餓小唐 
+        block bodyScripts
