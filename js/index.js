@@ -2,11 +2,11 @@ $(function() {
     const specialSlider = $('.special__slider');
 
     specialSlider.slick({
-        autoplay: true
-        // centerMode: true,
-        // slidesToShow: 1,
-        // slidesToScroll: 1,
-        // centerPadding: '60px'
+        // autoplay: true
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 1,
+        arrows: true
     });
 
     const setSlider = $('.index__set-slider');

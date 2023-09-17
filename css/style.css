@@ -414,18 +414,6 @@ p {
     background-color: var(--main-brown);
     border-radius: 10px;
     filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.25)); }
-    .index__set-slider .slick-arrow {
-      top: 95%;
-      width: 40px;
-      height: 40px;
-      border: 1px solid var(--main-brown);
-      border-radius: 50%; }
-      .index__set-slider .slick-arrow::before {
-        color: var(--main-brown); }
-    .index__set-slider .slick-prev {
-      left: calc(100% + 45px); }
-    .index__set-slider .slick-next {
-      right: -140px; }
   .index__set-slide h2 {
     color: var(--general-white);
     text-align: center;
@@ -542,10 +530,13 @@ p {
   background-color: var(--main-deep-blue); }
   .special h1 {
     color: var(--main-brown); }
+  .special__slider .slick-slide {
+    max-width: 100%; }
   .special__slide-box {
     position: relative;
-    display: inline-block;
-    text-align: center; }
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
   .special__slide h2 {
     position: relative;
     width: 100%;
@@ -555,7 +546,8 @@ p {
     font-size: 18.75rem;
     line-height: 1.33;
     letter-spacing: 7.5rem;
-    opacity: 0.2; }
+    opacity: 0.2;
+    margin: 0 auto; }
   .special__slide img {
     position: absolute;
     left: 50%;
@@ -565,7 +557,7 @@ p {
   .special__slide p {
     max-width: 40rem;
     color: var(--general-white);
-    margin-top: 30px; }
+    margin: 30px auto 0; }
 
 @media (max-width: 1199px) {
   .index__news-imgbox {
@@ -577,7 +569,33 @@ p {
 @media (max-width: 1199px) and (min-width: 768px) {
   .index__about {
     padding-top: 50px; } }
+@media (min-width: 992px) {
+  .index__set-slider .slick-arrow {
+    top: 95%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--main-brown);
+    border-radius: 50%; }
+    .index__set-slider .slick-arrow::before {
+      color: var(--main-brown); }
+  .index__set-slider .slick-prev {
+    left: calc(100% + 45px); }
+  .index__set-slider .slick-next {
+    right: -140px; } }
 @media (max-width: 991px) {
+  .index__set-slider .slick-arrow {
+    top: 20%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--main-brown);
+    border-radius: 50%; }
+    .index__set-slider .slick-arrow::before {
+      color: var(--main-brown); }
+  .index__set-slider .slick-prev {
+    left: -50px; }
+  .index__set-slider .slick-next {
+    right: -50px; }
+
   .banner {
     height: 200vw; }
     .banner h1 {
