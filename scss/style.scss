@@ -260,6 +260,24 @@
         .slick {
             &-slide {
                 max-width: 100%;
+                &:not(.slick-current) {
+                    opacity: 0.2;
+                }
+            }
+            &-arrow {
+                width: 40px;
+                height: 40px;
+                border: 1px solid var(--main-brown);
+                border-radius: 50%;
+                &::before {
+                    color: var(--main-brown);
+                }
+            }
+            &-prev {
+                left: 25%;
+            }
+            &-next {
+                right: 25%;
             }
         }
     }
@@ -272,11 +290,11 @@
         }
         h2 {
             position: relative;
-            width: 100%;
-            max-width: 53rem;
+            // width: 100%;
+            // max-width: 53rem;
             z-index: 1;
             color: var(--main-brown);
-            font-size: 18.75rem;
+            font-size: 10vw;
             line-height: 1.33;
             letter-spacing: 7.5rem;
             opacity: 0.2;

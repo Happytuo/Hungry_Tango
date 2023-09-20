@@ -2,9 +2,9 @@ $(function() {
     const specialSlider = $('.special__slider');
 
     specialSlider.slick({
-        // autoplay: true
+        autoplay: true,
         centerMode: true,
-        centerPadding: '60px',
+        centerPadding: '25%',
         slidesToShow: 1,
         arrows: true
     });
